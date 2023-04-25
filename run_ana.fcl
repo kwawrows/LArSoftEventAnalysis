@@ -1,0 +1,30 @@
+#include "EventAnaTree_config.fcl"
+#include "services_dune.fcl"
+#include "trackfindermodules_dune.fcl"
+
+
+process_name: EventAnalysisTree
+
+source:
+{
+  module_type: RootInput
+  maxEvents:   -1
+}
+
+services:
+{
+ @table::dunefd_services
+ TFileService: {fileName : "ana_tree.root"}
+}
+
+physics:
+{
+  analyzers:
+  {
+  ana: @local::eventanatree
+  }
+  path0:     [ana]
+  end_paths: [path0]
+}
+
+services.Geometry: @local::dune10kt_1x2x6_geo

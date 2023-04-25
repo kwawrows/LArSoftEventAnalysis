@@ -1,0 +1,21 @@
+BEGIN_PROLOG
+
+pandoraperformanceana:
+ {
+  module_type:        "EventAnaTree"
+
+  TruthLabel:         "largeant"
+  ParticleLabel:      "pandora" 
+  TrackLabel:         "pandoraTrack" 
+  ShowerLabel: 	      "pandoraShower"     
+  HitLabel:           "linecluster" 
+  GenieLabel:         "generator"
+  CaloLabel:          "pandoracalo"
+  FlashT0Label:       "photont0pandora"
+  OpHitModuleLabel:   "ophit"
+  PandoraVertexLabel: "pandora"
+  SpacePointLabel:    "pandora"
+  SaveGenieInfo:      true 
+ } 
+
+END_PROLOG
