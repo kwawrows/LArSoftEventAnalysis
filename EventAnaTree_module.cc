@@ -555,9 +555,9 @@ void dune::EventAnaTree::analyze(art::Event const& e)
 	  fgenie_primaries_pdg.push_back( part.PdgCode() );
 	  fgenie_Eng.push_back( part.E() );
 	  fgenie_Px.push_back( part.Px() );
-	  fgenie_Px.push_back( part.Py() );
-	  fgenie_Px.push_back( part.Pz() );
-	  fgenie_Px.push_back( part.P() );
+	  fgenie_Py.push_back( part.Py() );
+	  fgenie_Pz.push_back( part.Pz() );
+	  fgenie_P.push_back( part.P() );
 	  fgenie_status_code.push_back( part.StatusCode() );
 	  
 	} // loop over genie particles 
